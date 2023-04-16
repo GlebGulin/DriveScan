@@ -63,9 +63,13 @@ namespace BLL.Services
         public CompareResultListsDTO CompareLists(List<FileDiskDTO> currentList, List<FileDiskDTO> googleList)
         {
             var resultCompare = new CompareResultListsDTO();
-            var result1 = googleList.Except(currentList, new ListFileComparer());
-            var result2 = currentList.Except(googleList, new ListFileComparer());
-            resultCompare.Result = (result1.Count() == 0 && result2.Count() == 0) ? true : false;
+            var addedFiles   = googleList.Except(currentList, new ListFileComparer());
+            var removedFiles = currentList.Except(googleList, new ListFileComparer());
+
+            resultCompare.AddedFiles   = addedFiles.ToList();
+            resultCompare.RemovedFiles = removedFiles.ToList();
+
+            resultCompare.Result = (addedFiles.Count() == 0 && removedFiles.Count() == 0) ? true : false;
             return resultCompare;
         }
 
@@ -140,6 +144,30 @@ namespace BLL.Services
                 result.Message = ex.Message;
                 return result;
             }
+        }
+
+        public void TrackAddedFiles(List<FileDiskDTO> addedFiles)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Added Files:");
+            foreach (var file in addedFiles)
+            {
+                Console.WriteLine("\t{0}", file.Name);
+            }
+            Console.ResetColor();
+            return;
+        }
+
+        public void TrackDeletedFiles(List<FileDiskDTO> deletedFiles)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Added Files:");
+            foreach (var file in deletedFiles)
+            {
+                Console.WriteLine("\t{0}", file.Name);
+            }
+            Console.ResetColor();
+            return;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using BLL.Google;
 using BLL.Services;
 using BLL.Services.Abstractions;
+using Common;
 using Common.Enums;
 using DTOs.Responces;
 using System;
@@ -10,12 +11,21 @@ namespace ScanGoogleDrive
     class Program
     {
         private static FileListDTO currentList = new FileListDTO();
-        private static string SpreedSheetId    = String.Empty;
-        private static string SheetTitle       = String.Empty; 
+        private static string    SpreedSheetId = String.Empty;
+        private static string       SheetTitle = String.Empty;
+        private static bool      FirstChecking = true;
 
         static void Main(string[] args)
         {
             Console.WriteLine("Starting...");
+            if(String.IsNullOrEmpty(GlobalSettings.ClientId) 
+                || String.IsNullOrEmpty(GlobalSettings.ClientSecret) 
+                || String.IsNullOrEmpty(GlobalSettings.ProjectName)
+                || String.IsNullOrEmpty(GlobalSettings.User))
+            {
+                Console.WriteLine("For the application to work correctly, you must first configure the GlobalSettings.cs file");
+                Console.ReadKey();
+            }
 
             //Authentication
             GoogleService googleService = new GoogleService();
@@ -36,7 +46,7 @@ namespace ScanGoogleDrive
 
             //Getting a list of all files
             var startTimeSpan = TimeSpan.Zero;
-            var periodTimeSpan = TimeSpan.FromMinutes(15);
+            var periodTimeSpan = TimeSpan.FromMinutes(GlobalSettings.IntervalMins);
 
             var timer = new System.Threading.Timer((e) =>
             {
@@ -64,9 +74,18 @@ namespace ScanGoogleDrive
                     
                     if (!compareResult.Result)
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkBlue;
-                        Console.WriteLine("Changes were found on Google Drive. Changes in the google registered files file will be made accordingly");
-                        Console.ResetColor();
+                        if (!FirstChecking)
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkBlue;
+                            Console.WriteLine("Changes were found on Google Drive. Changes in the google registered files file will be made accordingly");
+                            Console.ResetColor();
+                            if (compareResult.RemovedFiles.Count > 0)
+                                service.TrackDeletedFiles(compareResult.RemovedFiles);
+                            if (compareResult.AddedFiles.Count > 0)
+                                service.TrackAddedFiles(compareResult.AddedFiles);
+                        }
+
+                        FirstChecking = false;
                         var writeSheets = service.WriteUpdatedList(res.Files, SpreedSheetId, SheetTitle);
                         SpreedSheetId = writeSheets.SpreedSheetId;
                         SheetTitle = writeSheets.SheetTitle;
