@@ -1,0 +1,13 @@
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\bin\Debug\netcoreapp3.1\Models.dll
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\bin\Debug\netcoreapp3.1\Models.pdb
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\bin\Debug\netcoreapp3.1\Common.dll
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\bin\Debug\netcoreapp3.1\Common.pdb
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\obj\Debug\netcoreapp3.1\Models.csproj.AssemblyReference.cache
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\obj\Debug\netcoreapp3.1\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\obj\Debug\netcoreapp3.1\Models.csproj.CopyComplete
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\obj\Debug\netcoreapp3.1\Models.dll
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\Models\obj\Debug\netcoreapp3.1\Models.pdb

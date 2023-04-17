@@ -40,7 +40,7 @@ namespace ScanGoogleDrive
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(String.Format("Google services were successfully authorised. Current time {0}. The next console and google shits file updates are expected at {1}", DateTime.Now.ToString(), DateTime.Now.AddMinutes(15).ToString()));
+            Console.WriteLine(String.Format("Google services were successfully authorised. Current time {0}. The next console and google sheets file updates are expected at {1}", DateTime.Now.ToString(), DateTime.Now.AddMinutes(GlobalSettings.IntervalMins).ToString()));
             Console.ResetColor();
             Console.WriteLine("Starts the process of retrieving all google drive files of a given account...");
 
@@ -67,7 +67,7 @@ namespace ScanGoogleDrive
                         Console.WriteLine(String.Format("File Name: {0}  File Type: {1}   File Id: {2}", file.Name, file.MimeType, file.Id));
                     }
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(String.Format("{0} files in total found. Next search will take 15 minutes, at {1}", res.Files.Count, DateTime.Now.AddMinutes(15).ToString()));
+                    Console.WriteLine(String.Format("{0} files in total found. Next search will take {1} minutes, at {2}", res.Files.Count, GlobalSettings.IntervalMins, DateTime.Now.AddMinutes(GlobalSettings.IntervalMins).ToString()));
                     Console.ResetColor();
 
                     var compareResult = service.CompareLists(currentList.Files, res.Files);

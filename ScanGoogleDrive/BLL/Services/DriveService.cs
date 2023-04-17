@@ -161,7 +161,7 @@ namespace BLL.Services
         public void TrackDeletedFiles(List<FileDiskDTO> deletedFiles)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Added Files:");
+            Console.WriteLine("Deleted Files:");
             foreach (var file in deletedFiles)
             {
                 Console.WriteLine("\t{0}", file.Name);

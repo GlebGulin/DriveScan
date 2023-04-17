@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "UphdReYD/Hw1LIc9Qsq1It7MPmkVF2BCvDWyRQP13IxAghrSfs7lHZRd4txvrYhkIJvCzpEBgCbG/Pqoj7Bw4Q==",
+  "success": true,
+  "projectFilePath": "D:\\Learn_Programming\\Execution\\C#\\ReserveGoogleScan\\DriveScan\\ScanGoogleDrive\\ScanGoogleDrive\\ScanGoogleDrive.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gleb\\.nuget\\packages\\google.apis\\1.60.0\\google.apis.1.60.0.nupkg.sha512",
+    "C:\\Users\\gleb\\.nuget\\packages\\google.apis.auth\\1.60.0\\google.apis.auth.1.60.0.nupkg.sha512",
+    "C:\\Users\\gleb\\.nuget\\packages\\google.apis.core\\1.60.0\\google.apis.core.1.60.0.nupkg.sha512",
+    "C:\\Users\\gleb\\.nuget\\packages\\google.apis.drive.v3\\1.60.0.2986\\google.apis.drive.v3.1.60.0.2986.nupkg.sha512",
+    "C:\\Users\\gleb\\.nuget\\packages\\google.apis.sheets.v4\\1.60.0.2979\\google.apis.sheets.v4.1.60.0.2979.nupkg.sha512",
+    "C:\\Users\\gleb\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

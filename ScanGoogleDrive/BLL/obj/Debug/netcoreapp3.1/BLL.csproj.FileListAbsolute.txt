@@ -1,0 +1,17 @@
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\Common.dll
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\DTOs.dll
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\Models.dll
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\DTOs.pdb
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\Models.pdb
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\bin\Debug\netcoreapp3.1\Common.pdb
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\obj\Debug\netcoreapp3.1\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+D:\Learn_Programming\Execution\C#\ReserveGoogleScan\DriveScan\ScanGoogleDrive\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
